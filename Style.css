@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root{
+	--White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+   --Grayish-blue: hsl(220, 15%, 55%);
+   --Dark-blue: hsl(218, 44%, 22%);
+   /*Font Weight*/
+   --fs-lg: 400;
+   --fs-xm: 700;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+	font-family: 'Outfit', sans-serif;
+	max-width: 100%;
+}
+
+img{
+	border-radius: 5px;
+	width: 100%;
+	object-fit: cover;
+}
+
+p{
+	font-size: 15px;
+	font-weight: var(--fs-lg);
+	color: var(--Grayish-blue);
+	font-weight: var(--fs-lg);
+	text-align: center;
+}
+
+.section{
+	padding: 9px 15px;
+}
+
+.container{
+	background: var(--Light-gray);
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.container-child{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	width: 21%;
+	height: 65vh;
+	position: absolute;
+    top: 76px;
+	right: 520px;
+	border-radius: 5px;
+}
+
+.flex{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.flex-1 img{
+	width: 100%;
+	border-radius: 5px;
+}
+
+h3{
+	font-weight: var(--fs-xm);
+	color: var(--Dark-blue);
+	font-size: 1.234rem;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+
+.attribution{
+	position: absolute;
+	bottom: 100px;
+	right: 450px;
+}
+
+.attribution a{
+	text-decoration: none;
+	color: var(--Grayish-blue);
+}
+
+@media all and (max-width: 1110px){
+	.container-child {
+		width: 27%;
+		height: 60vh;
+		right: 350px;
+	  }
+
+	  .attribution {
+		position: absolute;
+		/* bottom: 240px; */
+		right: 240px;
+	  }
+}
+
+@media all and (max-width: 790px){
+	.container-child {
+		width: 37%;
+		height: 60vh;
+		right: 240px;
+	  }
+
+	  .attribution {
+		position: absolute;
+	    bottom: 100px; 
+		right: 110px;
+	  }
+	  
+}
+
+@media all and (max-width: 550px){
+	h3{
+		font-size: 1rem;
+	}
+
+	p{
+		font-size: 13px;
+	}
+
+	.container-child {
+		width: 55%;
+		right: 100px;
+	  }
+
+	  .attribution {
+		position: absolute;
+		right: 10px;
+	  }
+
+
+}
+
